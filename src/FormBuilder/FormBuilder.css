@@ -1,0 +1,255 @@
+.FormBuilder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: #E5E5E5 1px solid;
+}
+
+@media (min-width: 992px) { /* 992px and up */
+  .FormBuilder {
+    flex-wrap: nowrap;
+  }
+}
+
+.FormBuilder__Tabs {
+  flex: 1 1 auto;
+  background-color: white;
+}
+
+.FormBuilder__Editor {
+   /*flex: 100 1 auto;*/
+  padding-top: 3em;
+  flex: 100 1 auto;
+  border-left: #E5E5E5 1px solid;
+  background-color: #F1F1F1;
+}
+
+@media (min-width: 992px) { /* 992px and up */
+  .FormBuilder__Editor {
+    padding: 3em;
+  }
+}
+
+.FormBuilder__EditorBody {
+  background-color: white;
+  border: #EBEBEB 1px solid;
+  padding: .5em;
+}
+
+@media (min-width: 992px) { /* 992px and up */
+  .FormBuilder__EditorBody {
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+  }
+}
+
+.Tabs__Header {
+  background-color: #E5E5E5;
+  margin: 0;
+  display: block;
+  text-align: center;
+  padding: 1em;
+}
+
+.Tabs__Container {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.Tabs__Description {
+  color: #BFBFBF;
+  font-style: italic;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: #EBEBEB 1px solid;
+}
+
+.Tabs__Headline {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.Tabs__Textarea {
+  width: 100%;
+  height: 6em;
+}
+
+.TabsButtons__TabsPanel {
+  border-bottom: #EBEBEB 1px solid;
+  border-top: #EBEBEB 1px solid;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: stretch;
+  margin-bottom: 3px;
+}
+
+.TabsButtons__Tab {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  flex: 1 1 50%;
+  cursor: pointer;
+  margin-bottom: -3px;
+}
+
+.TabsButtons__Tab--active {
+  border-bottom: #7D88D4 2px solid;
+}
+
+.Buttons__Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: stretch;
+  margin-left: -.5em;
+  margin-right: -.5em;
+}
+
+.Buttons__Col {
+  flex: 1 1 auto;
+  align-self: stretch;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.FButton {
+  background-color: white;
+  border: 1px solid #F2F2F2;
+  padding: .5em 1em;
+  border-radius: .25em;
+  margin-bottom: 1em;
+  cursor: pointer;
+   /*font-size: 0.8rem;*/
+}
+
+.FButton:hover {
+  border-color: #7D88D4;
+  color: #7D88D4;
+}
+
+.FButton--stretch {
+  width: 100%;
+}
+
+.Editor__Header {
+  margin-bottom: 1em;
+}
+
+.Editor__Desc {
+  margin-bottom: 1em;
+  border-bottom: #EBEBEB 1px solid;
+  padding-bottom: 1em;
+}
+
+.Editor__DescSpan {
+  color: #B8B8B8;
+}
+
+.Editor__TableCaption {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  width: 100%;
+  padding-left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+     /*align-content: stretch;*/
+    align-items: flex-start;
+
+}
+
+.Card {
+   /*border: gray 1px dashed;*/
+  padding: 0.5em 0;
+  margin-bottom: .5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media (min-width: 992px) { /* 992px and up */
+  .FormBuilder__Editor {
+    padding: 3em;
+  }
+}
+
+.Card__Drag {
+  width: 12px;
+  float: left;
+  cursor: move;
+}
+
+.Card--dragging {
+  opacity: 0;
+}
+
+.Card__Remove {
+  font-size: 0.8em;
+  cursor: pointer;
+  color: #FF8CA0;
+}
+
+.Errors__List {
+  margin-top: 0.3em;
+  list-style-type: none;
+  font-size: 0.8em;
+  color: #FF8CA0;
+  font-weight: bold;
+}
+
+.Choices__List {
+  list-style-type: none;
+  font-size: 0.9em;
+  color: #BFBFBF;
+}
+
+.Choices__AddChoice {
+  font-size: 0.9em;
+  color: #BEC4EA;
+  cursor: pointer;
+}
+
+.Choices__Select: {
+  min-width: 3em;
+}
+
+.Trash__Container {
+  cursor: pointer;
+  margin-left: .3em;
+}
+
+.Trash__Icon {
+  height: 1em;
+}
+
+.Edit__Container {
+  cursor: pointer;
+  margin-left: .3em;
+}
+
+.Edit__Icon {
+  height: 1em;
+}
+
+.Arrows__Container {
+  margin: .5em;
+}
+
+.Arrows__Arrow {
+  cursor: pointer;
+}
+
+.Arrows__Arrow--disabled {
+  color: #BFBFBF;
+}
