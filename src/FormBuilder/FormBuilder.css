@@ -57,8 +57,15 @@
 }
 
 .Tabs__Container {
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+@media (min-width: 992px) { /* 992px and up */
+  .Tabs__Container {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 }
 
 .Tabs__Description {

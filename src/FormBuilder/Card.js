@@ -114,11 +114,11 @@ export default class Card extends Component {
           {widget}
         </div>
 
-        <div style={{flex: '1 0 auto', paddingRight: '1em'}}>
+        <div style={{flex: '1 0 auto', paddingRight: '1em', textAlign: 'right'}}>
           <input type='checkbox' checked={required} onChange={() => actions.changeRequired(id)} />
         </div>
 
-        <div style={{flex: '1 0 auto'}}>
+        <div style={{flex: '1 0 auto', textAlign: 'right'}}>
           <a className='Card__Remove' onClick={e => actions.remove(id)}>Remove</a>
         </div>
       </div>
