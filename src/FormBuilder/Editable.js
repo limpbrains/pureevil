@@ -39,6 +39,7 @@ export default class Editable extends Component {
             value={text}
             onKeyDown={this.handleKeyDown}
             onChange={this.handleChange}
+            className='Editable__Input'
             ref={input => {
               if (input != null) {
                 input.focus()

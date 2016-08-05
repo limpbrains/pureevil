@@ -275,3 +275,10 @@
 .Arrows__Arrow--disabled {
   color: #BFBFBF;
 }
+
+.Editable__Input > input {
+  border: 0px;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
