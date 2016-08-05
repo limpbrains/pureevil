@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { DragDropContext } from 'react-dnd'
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import HTML5Backend from 'react-dnd-html5-backend'
 
 import Card from './Card'

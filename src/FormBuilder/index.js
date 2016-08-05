@@ -33,10 +33,7 @@ class FormBuilder extends Component {
     // remove fields id's
     const newScheme = {
       ...scheme,
-      fields: scheme.fields.map(f => {
-        delete f.id
-        return f
-      })
+      fields: scheme.fields.map(({...f, id}) => f)
     }
 
     onSave(newScheme)
