@@ -282,3 +282,12 @@
   font-family: inherit;
   color: inherit;
 }
+
+.Editable__ExampleInput {
+  border-radius: .25em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #BFBFBF;
+  color: #BFBFBF;
+  padding: .3em;
+}

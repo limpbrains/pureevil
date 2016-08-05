@@ -14,7 +14,7 @@ const Trash = ({id, index, actions}) =>
   </a>
 
 export const Input = () =>
-  <input placeholder='Single-line text' />
+  <input placeholder='Single-line text' className='Editable__ExampleInput' />
 
 export const RadioCheckbox = ({ choices = [], actions, id, type }) =>
   <div>
@@ -58,4 +58,4 @@ export const File = () =>
   <input type='file' />
 
 export const Textarea = () =>
-  <textarea />
+  <textarea className='Editable__ExampleInput' />
