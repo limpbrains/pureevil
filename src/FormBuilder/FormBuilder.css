@@ -1,3 +1,8 @@
+.FormBuilder * {
+  margin: 0;
+  padding: 0;
+}
+
 .FormBuilder {
   display: flex;
   flex-direction: row;
@@ -198,6 +203,24 @@
   font-size: 0.8em;
   cursor: pointer;
   color: #FF8CA0;
+}
+
+.Card__Animation-enter {
+  opacity: 0.01;
+}
+
+.Card__Animation-enter.Card__Animation-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.Card__Animation-leave {
+  opacity: 1;
+}
+
+.Card__Animation-leave.Card__Animation-leave-active {
+  opacity: 0.01;
+  transition: opacity 200ms ease-in;
 }
 
 .Errors__List {
