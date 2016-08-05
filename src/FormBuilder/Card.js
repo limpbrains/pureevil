@@ -46,6 +46,15 @@ const cardTarget = {
 }
 
 export default class Card extends Component {
+  constructor(props) {
+    super(props)
+    this.componentDidMount = this.componentDidMount.bind(this)
+  }
+
+  componentDidMount() {
+    (this.ref.scrollIntoViewIfNeeded || this.ref.scrollIntoView).bind(this.ref)();
+  }
+
   render() {
     const { isDragging, connectDragSource, connectDropTarget, connectDragPreview } = this.props
     const { field: { name, type, required, id, ...other }, actions, errors, first, last, index } = this.props
@@ -77,7 +86,10 @@ export default class Card extends Component {
     }
 
     return connectDragPreview(connectDropTarget(
-      <div className={classNames('Card', {'Card--dragging': isDragging})}>
+      <div className={classNames('Card', {'Card--dragging': isDragging})}
+        ref={ref => {
+          this.ref = ref
+        }}>
 
         <div style={{flex: '50 1 50%', wordWrap: 'break-word'}}>
           {connectDragSource(
